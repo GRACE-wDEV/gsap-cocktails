@@ -185,6 +185,7 @@ body {
     }
 
     #about {
+
         @apply min-h-screen py-28 2xl:px-0 px-5 container mx-auto;
 
         .content {
@@ -221,9 +222,9 @@ body {
             > div {
                 @apply rounded-3xl overflow-hidden h-72 relative;
             }
-
+            
             img {
-                @apply object-cover w-full h-full;
+                @apply object-cover w-full h-full ;
             }
         }
 
@@ -238,6 +239,7 @@ body {
                 @apply object-cover w-full h-full;
             }
         }
+         
     }
 
     #art {

@@ -1,11 +1,18 @@
+
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Deployment Notes
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- All static assets (images, fonts, videos) should be placed in the `public` folder and referenced with `/images/...`, `/fonts/...`, `/videos/...`.
+- The Vite config sets `base: './'` for correct asset resolution in most static deployments (Netlify, Vercel, GitHub Pages, etc).
+- If deploying to a custom subfolder, update the `base` option in `vite.config.js` accordingly.
+- If you use GSAP SplitText, ensure your deployment environment supports it (SplitText is a paid plugin).
+- For best results, run:
+	```sh
+	npm install
+	npm run build
+	# Deploy the contents of the dist/ folder
+	```
 
 ## Expanding the ESLint configuration
 
